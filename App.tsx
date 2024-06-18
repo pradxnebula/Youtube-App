@@ -6,6 +6,9 @@ import { View, Text, Dimensions, TouchableOpacity, Image } from "react-native";
 import SearchScreen from "./screens/search.tsx";
 import HomeScreen from "./screens/home.tsx";
 import ShortsScreen from "./screens/shorts.tsx";
+import SubsScreen from "./screens/subscriptions.tsx";
+import AccountScreen from "./screens/account.tsx";
+
 import homeStyle from "./screens/styles/homeStyle.js";
 const Stack = createNativeStackNavigator();
 
@@ -16,7 +19,12 @@ function FixedNavBar() {
   const navigation = useNavigation();
 
   return (
-    <View style={[homeStyle.navBarBottom, { width: screenWidth, position: 'absolute', bottom: 0 }]}>
+    <View
+      style={[
+        homeStyle.navBarBottom,
+        { width: screenWidth, position: "absolute", bottom: 0 },
+      ]}
+    >
       <View
         style={{
           flex: 1,
@@ -38,15 +46,15 @@ function FixedNavBar() {
         </View>
 
         <View style={homeStyle.navBtnWrap}>
-        <TouchableOpacity
+          <TouchableOpacity
             onPress={() => navigation.navigate("Shorts")}
             style={{ alignItems: "center" }}
           >
-          <Image
-            source={require("./assets/shorts.png")}
-            style={homeStyle.navIcon}
-          />
-          <Text style={homeStyle.navBtnText}>Shorts</Text>
+            <Image
+              source={require("./assets/shorts.png")}
+              style={homeStyle.navIcon}
+            />
+            <Text style={homeStyle.navBtnText}>Shorts</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -64,19 +72,29 @@ function FixedNavBar() {
         }}
       >
         <View style={homeStyle.navBtnWrap}>
-          <Image
-            source={require("./assets/subscriptions.png")}
-            style={homeStyle.navIcon}
-          />
-          <Text style={homeStyle.navBtnText}>Subscriptions</Text>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Subscriptions")}
+            style={{ alignItems: "center" }}
+          >
+            <Image
+              source={require("./assets/subscriptions.png")}
+              style={homeStyle.navIcon}
+            />
+            <Text style={homeStyle.navBtnText}>Subscriptions</Text>
+          </TouchableOpacity>
         </View>
 
         <View style={homeStyle.navBtnWrap}>
-          <Image
-            source={require("./assets/channels4_profile.jpg")}
-            style={[homeStyle.navIcon, { borderRadius: 100 }]}
-          />
-          <Text style={homeStyle.navBtnText}>You</Text>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Account")}
+            style={{ alignItems: "center" }}
+          >
+            <Image
+              source={require("./assets/channels4_profile.jpg")}
+              style={[homeStyle.navIcon, { borderRadius: 100 }]}
+            />
+            <Text style={homeStyle.navBtnText}>You</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </View>
@@ -87,10 +105,15 @@ function App() {
   return (
     <NavigationContainer>
       <View style={{ flex: 1 }}>
-        <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>
+        <Stack.Navigator
+          initialRouteName="Home"
+          screenOptions={{ headerShown: false }}
+        >
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="Details" component={SearchScreen} />
           <Stack.Screen name="Shorts" component={ShortsScreen} />
+          <Stack.Screen name="Subscriptions" component={SubsScreen} />
+          <Stack.Screen name="Account" component={AccountScreen} />
         </Stack.Navigator>
 
         <FixedNavBar />

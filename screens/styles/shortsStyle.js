@@ -4,8 +4,8 @@ import {
 
 
 
-const searchStyle = StyleSheet.create({
+const subsStyle = StyleSheet.create({
 
 });
 
-export default searchStyle;
+export default subsStyle;

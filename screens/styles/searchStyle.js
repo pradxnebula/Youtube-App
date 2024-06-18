@@ -6,7 +6,7 @@ import {
 
 const searchStyle = StyleSheet.create({
     container: {
-        backgroundColor: 'black',
+        backgroundColor: '#0f0f0f',
         paddingTop: 3
     },
     box: {

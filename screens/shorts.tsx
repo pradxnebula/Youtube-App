@@ -23,65 +23,8 @@ import homeStyle from "./styles/homeStyle.js";
 function ShortsScreen({ navigation }) {
   return (
     <View style={shortsStyle.container}>
-      {/* <View style={[homeStyle.navBarBottom, { width: screenWidth }]}>
-        <View
-          style={{
-            flex: 1,
-            flexDirection: "row",
-            justifyContent: "space-around",
-          }}
-        >
-          <View style={homeStyle.navBtnWrap}>
-            <TouchableOpacity
-              onPress={() => navigation.navigate("Home")}
-              style={{ alignItems: "center" }}
-            >
-              <Image
-                source={require("./assets/home-icon.png")}
-                style={homeStyle.navIcon}
-              />
-              <Text style={homeStyle.navBtnText}>Home</Text>
-            </TouchableOpacity>
-          </View>
-
-          <View style={homeStyle.navBtnWrap}>
-            <Image
-              source={require("./assets/shorts.png")}
-              style={homeStyle.navIcon}
-            />
-            <Text style={homeStyle.navBtnText}>Shorts</Text>
-          </View>
-        </View>
-
-        <Image
-          source={require("./assets/add_icon.png")}
-          style={{ width: 35, height: 35, marginLeft: 20, marginRight: 20 }}
-        />
-
-        <View
-          style={{
-            flex: 1,
-            flexDirection: "row",
-            justifyContent: "space-around",
-          }}
-        >
-          <View style={homeStyle.navBtnWrap}>
-            <Image
-              source={require("./assets/subscriptions.png")}
-              style={homeStyle.navIcon}
-            />
-            <Text style={homeStyle.navBtnText}>Subscriptions</Text>
-          </View>
-
-          <View style={homeStyle.navBtnWrap}>
-            <Image
-              source={require("./assets/channels4_profile.jpg")}
-              style={[homeStyle.navIcon, { borderRadius: 100 }]}
-            />
-            <Text style={homeStyle.navBtnText}>You</Text>
-          </View>
-        </View>
-      </View> */}
+  
+  
       <Video
         source={require("./assets/short.mp4")}
         style={shortsStyle.video}
@@ -91,6 +34,8 @@ function ShortsScreen({ navigation }) {
         paused={false} // Control playback state
         muted={false} // Mute the audio
       />
+
+
     </View>
   );
 }

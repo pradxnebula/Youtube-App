@@ -10,7 +10,7 @@ AppRegistry.registerComponent(appName, () => App);
 
 
 // import {AppRegistry} from 'react-native';
-// import ShortsScreen from './screens/shorts';
+// import AccountScreen from './screens/account';
 // import {name as appName} from './app.json';
 
-// AppRegistry.registerComponent(appName, () => ShortsScreen);
+// AppRegistry.registerComponent(appName, () => AccountScreen);

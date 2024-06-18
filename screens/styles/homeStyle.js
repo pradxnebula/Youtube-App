@@ -2,12 +2,12 @@ import {
   StyleSheet
 } from 'react-native';
 
-const  homeStyle = StyleSheet.create({
+const homeStyle = StyleSheet.create({
   containerBox: {
     flex: 1,
     alignItems: 'center',
     height: 0,
-    backgroundColor: 'black',
+    backgroundColor: '#0f0f0f',
   },
   text: {
     fontSize: 30,
@@ -43,7 +43,7 @@ const  homeStyle = StyleSheet.create({
   ImgCont: {
     width: 413,
     height: 230,
-    backgroundColor: 'black',
+    backgroundColor: '#0f0f0f',
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -74,7 +74,6 @@ const  homeStyle = StyleSheet.create({
   titleCont: {
     paddingRight: 37,
     width: 305,
-    // backgroundColor: 'pink'
   },
   vidTitle: {
     color: 'white',
@@ -169,7 +168,7 @@ const  homeStyle = StyleSheet.create({
     position: 'absolute',
     bottom: 0,
     zIndex: 999,
-    backgroundColor: 'black',
+    backgroundColor: '#0f0f0f',
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-around',
@@ -190,15 +189,15 @@ const  homeStyle = StyleSheet.create({
     alignItems: 'center',
   },
   optionBar: {
-flex: 1,
-flexDirection: 'row',
-// backgroundColor: 'pink',
-height: 10,
-justifyContent: 'space-between',
-gap: 25,
+    flex: 1,
+    flexDirection: 'row',
+    // backgroundColor: 'pink',
+    height: 10,
+    justifyContent: 'space-between',
+    gap: 25,
 
-alignItems: 'flex-start',
-justifyContent: 'left'
+    alignItems: 'flex-start',
+    justifyContent: 'left'
 
   },
   optionText: {
