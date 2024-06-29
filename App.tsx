@@ -8,6 +8,7 @@ import HomeScreen from "./screens/home.tsx";
 import ShortsScreen from "./screens/shorts.tsx";
 import SubsScreen from "./screens/subscriptions.tsx";
 import AccountScreen from "./screens/account.tsx";
+import VideoScreen from "./screens/video.tsx";
 
 import homeStyle from "./screens/styles/homeStyle.js";
 const Stack = createNativeStackNavigator();
@@ -114,6 +115,7 @@ function App() {
           <Stack.Screen name="Shorts" component={ShortsScreen} />
           <Stack.Screen name="Subscriptions" component={SubsScreen} />
           <Stack.Screen name="Account" component={AccountScreen} />
+          <Stack.Screen name="VideoScreen" component={VideoScreen}/>
         </Stack.Navigator>
 
         <FixedNavBar />

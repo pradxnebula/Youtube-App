@@ -90,66 +90,7 @@ function HomeScreen({ navigation }) {
         </View>
       </View>
 
-      {/* <View style={[homeStyle.navBarBottom, { width: screenWidth }]}>
-        <View
-          style={{
-            flex: 1,
-            flexDirection: "row",
-            justifyContent: "space-around",
-          }}
-        >
-          <View style={homeStyle.navBtnWrap}>
-            <Image
-              source={require("./assets/home-icon.png")}
-              style={homeStyle.navIcon}
-            />
-            <Text style={homeStyle.navBtnText}>Home</Text>
-          </View>
-
-          <View style={homeStyle.navBtnWrap}>
-            <TouchableOpacity
-              onPress={() => navigation.navigate("Shorts")}
-              style={{ alignItems: "center" }}
-            >
-              <Image
-                source={require("./assets/shorts.png")}
-                style={homeStyle.navIcon}
-              />
-              <Text style={homeStyle.navBtnText}>Shorts</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-
-        <Image
-          source={require("./assets/add_icon.png")}
-          style={{ width: 35, height: 35, marginLeft: 20, marginRight: 20 }}
-        />
-
-        <View
-          style={{
-            flex: 1,
-            flexDirection: "row",
-            justifyContent: "space-around",
-          }}
-        >
-          <View style={homeStyle.navBtnWrap}>
-            <Image
-              source={require("./assets/subscriptions.png")}
-              style={homeStyle.navIcon}
-            />
-            <Text style={homeStyle.navBtnText}>Subscriptions</Text>
-          </View>
-
-          <View style={homeStyle.navBtnWrap}>
-            <Image
-              source={require("./assets/channels4_profile.jpg")}
-              style={[homeStyle.navIcon, { borderRadius: 100 }]}
-            />
-            <Text style={homeStyle.navBtnText}>You</Text>
-          </View>
-        </View>
-      </View> */}
-
+      
       <Modal
         transparent={true}
         animationType="slide"
@@ -197,341 +138,317 @@ function HomeScreen({ navigation }) {
       </Modal>
 
       <ScrollView horizontal={false} style={homeStyle.verticalScroll}>
-        <View style={{ marginBottom: 25 }}>
-          <View style={homeStyle.ImgCont}>
-            <TouchableWithoutFeedback
-              onPressIn={() => setIsPressed(true)}
-              onPressOut={() => setIsPressed(false)}
-            >
+        <TouchableOpacity onPress={() => navigation.navigate("VideoScreen")}>
+          <View style={{ marginBottom: 25 }}>
+            <View style={homeStyle.ImgCont}>
               <Image
                 source={require("./assets/hq720.webp")}
-                style={[homeStyle.Image, isPressed && homeStyle.imagePressed]}
-              />
-            </TouchableWithoutFeedback>
-          </View>
-          <View style={homeStyle.timeCont}>
-            <Text style={homeStyle.time}>12:30</Text>
-          </View>
-          <View style={{ flex: 1, flexDirection: "row" }}>
-            <View>
-              <Image
-                source={require("./assets/channels4_profile.jpg")}
-                style={homeStyle.profileImg}
+                style={homeStyle.Image}
               />
             </View>
-            <View style={homeStyle.titleCont}>
-              <Text style={homeStyle.vidTitle}>
-                How she cracked Google Summer of Code in First year in 1
-                month🚀|GSoC Guide
-              </Text>
-              <Text style={homeStyle.subTitle}>
-                Nishant Chahar · 51K views · 2 weeks ago{" "}
-              </Text>
+            <View style={homeStyle.timeCont}>
+              <Text style={homeStyle.time}>12:30</Text>
             </View>
-            <View>
-              <TouchableOpacity onPress={handleOpenModal}>
+            <View style={{ flex: 1, flexDirection: "row" }}>
+              <View>
                 <Image
-                  source={require("./assets/download1.png")}
-                  style={homeStyle.optionIcon}
+                  source={require("./assets/channels4_profile.jpg")}
+                  style={homeStyle.profileImg}
                 />
-              </TouchableOpacity>
+              </View>
+              <View style={homeStyle.titleCont}>
+                <Text style={homeStyle.vidTitle}>
+                  How she cracked Google Summer of Code in First year in 1
+                  month🚀|GSoC Guide
+                </Text>
+                <Text style={homeStyle.subTitle}>
+                  Nishant Chahar · 51K views · 2 weeks ago{" "}
+                </Text>
+              </View>
+              <View>
+                <TouchableOpacity onPress={handleOpenModal}>
+                  <Image
+                    source={require("./assets/download1.png")}
+                    style={homeStyle.optionIcon}
+                  />
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
-        </View>
+        </TouchableOpacity>
 
-        <View style={{ marginBottom: 25 }}>
-          <View style={homeStyle.ImgCont}>
-            <TouchableWithoutFeedback
-              onPressIn={() => setIsPressed(true)}
-              onPressOut={() => setIsPressed(false)}
-            >
+        <TouchableOpacity onPress={() => navigation.navigate("VideoScreen")}>
+          <View style={{ marginBottom: 25 }}>
+            <View style={homeStyle.ImgCont}>
               <Image
                 source={require("./assets/hq720.webp")}
-                style={[homeStyle.Image, isPressed && homeStyle.imagePressed]}
-              />
-            </TouchableWithoutFeedback>
-          </View>
-          <View style={homeStyle.timeCont}>
-            <Text style={homeStyle.time}>12:30</Text>
-          </View>
-          <View style={{ flex: 1, flexDirection: "row" }}>
-            <View>
-              <Image
-                source={require("./assets/channels4_profile.jpg")}
-                style={homeStyle.profileImg}
+                style={homeStyle.Image}
               />
             </View>
-            <View style={homeStyle.titleCont}>
-              <Text style={homeStyle.vidTitle}>
-                How she cracked Google Summer of Code in First year in 1
-                month🚀|GSoC Guide
-              </Text>
-              <Text style={homeStyle.subTitle}>
-                Nishant Chahar · 51K views · 2 weeks ago{" "}
-              </Text>
+            <View style={homeStyle.timeCont}>
+              <Text style={homeStyle.time}>12:30</Text>
             </View>
-            <View>
-              <TouchableOpacity onPress={handleOpenModal}>
+            <View style={{ flex: 1, flexDirection: "row" }}>
+              <View>
                 <Image
-                  source={require("./assets/download1.png")}
-                  style={homeStyle.optionIcon}
+                  source={require("./assets/channels4_profile.jpg")}
+                  style={homeStyle.profileImg}
                 />
-              </TouchableOpacity>
+              </View>
+              <View style={homeStyle.titleCont}>
+                <Text style={homeStyle.vidTitle}>
+                  How she cracked Google Summer of Code in First year in 1
+                  month🚀|GSoC Guide
+                </Text>
+                <Text style={homeStyle.subTitle}>
+                  Nishant Chahar · 51K views · 2 weeks ago{" "}
+                </Text>
+              </View>
+              <View>
+                <TouchableOpacity onPress={handleOpenModal}>
+                  <Image
+                    source={require("./assets/download1.png")}
+                    style={homeStyle.optionIcon}
+                  />
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
-        </View>
+        </TouchableOpacity>
 
-        <View style={{ marginBottom: 25 }}>
-          <View style={homeStyle.ImgCont}>
-            <TouchableWithoutFeedback
-              onPressIn={() => setIsPressed(true)}
-              onPressOut={() => setIsPressed(false)}
-            >
+        <TouchableOpacity onPress={() => navigation.navigate("VideoScreen")}>
+          <View style={{ marginBottom: 25 }}>
+            <View style={homeStyle.ImgCont}>
               <Image
                 source={require("./assets/hq720.webp")}
-                style={[homeStyle.Image, isPressed && homeStyle.imagePressed]}
-              />
-            </TouchableWithoutFeedback>
-          </View>
-          <View style={homeStyle.timeCont}>
-            <Text style={homeStyle.time}>12:30</Text>
-          </View>
-          <View style={{ flex: 1, flexDirection: "row" }}>
-            <View>
-              <Image
-                source={require("./assets/channels4_profile.jpg")}
-                style={homeStyle.profileImg}
+                style={homeStyle.Image}
               />
             </View>
-            <View style={homeStyle.titleCont}>
-              <Text style={homeStyle.vidTitle}>
-                How she cracked Google Summer of Code in First year in 1
-                month🚀|GSoC Guide
-              </Text>
-              <Text style={homeStyle.subTitle}>
-                Nishant Chahar · 51K views · 2 weeks ago{" "}
-              </Text>
+            <View style={homeStyle.timeCont}>
+              <Text style={homeStyle.time}>12:30</Text>
             </View>
-            <View>
-              <TouchableOpacity onPress={handleOpenModal}>
+            <View style={{ flex: 1, flexDirection: "row" }}>
+              <View>
                 <Image
-                  source={require("./assets/download1.png")}
-                  style={homeStyle.optionIcon}
+                  source={require("./assets/channels4_profile.jpg")}
+                  style={homeStyle.profileImg}
                 />
-              </TouchableOpacity>
+              </View>
+              <View style={homeStyle.titleCont}>
+                <Text style={homeStyle.vidTitle}>
+                  How she cracked Google Summer of Code in First year in 1
+                  month🚀|GSoC Guide
+                </Text>
+                <Text style={homeStyle.subTitle}>
+                  Nishant Chahar · 51K views · 2 weeks ago{" "}
+                </Text>
+              </View>
+              <View>
+                <TouchableOpacity onPress={handleOpenModal}>
+                  <Image
+                    source={require("./assets/download1.png")}
+                    style={homeStyle.optionIcon}
+                  />
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
-        </View>
+        </TouchableOpacity>
 
-        <View style={{ marginBottom: 25 }}>
-          <View style={homeStyle.ImgCont}>
-            <TouchableWithoutFeedback
-              onPressIn={() => setIsPressed(true)}
-              onPressOut={() => setIsPressed(false)}
-            >
+        <TouchableOpacity onPress={() => navigation.navigate("VideoScreen")}>
+          <View style={{ marginBottom: 25 }}>
+            <View style={homeStyle.ImgCont}>
               <Image
                 source={require("./assets/hq720.webp")}
-                style={[homeStyle.Image, isPressed && homeStyle.imagePressed]}
-              />
-            </TouchableWithoutFeedback>
-          </View>
-          <View style={homeStyle.timeCont}>
-            <Text style={homeStyle.time}>12:30</Text>
-          </View>
-          <View style={{ flex: 1, flexDirection: "row" }}>
-            <View>
-              <Image
-                source={require("./assets/channels4_profile.jpg")}
-                style={homeStyle.profileImg}
+                style={homeStyle.Image}
               />
             </View>
-            <View style={homeStyle.titleCont}>
-              <Text style={homeStyle.vidTitle}>
-                How she cracked Google Summer of Code in First year in 1
-                month🚀|GSoC Guide
-              </Text>
-              <Text style={homeStyle.subTitle}>
-                Nishant Chahar · 51K views · 2 weeks ago{" "}
-              </Text>
+            <View style={homeStyle.timeCont}>
+              <Text style={homeStyle.time}>12:30</Text>
             </View>
-            <View>
-              <TouchableOpacity onPress={handleOpenModal}>
+            <View style={{ flex: 1, flexDirection: "row" }}>
+              <View>
                 <Image
-                  source={require("./assets/download1.png")}
-                  style={homeStyle.optionIcon}
+                  source={require("./assets/channels4_profile.jpg")}
+                  style={homeStyle.profileImg}
                 />
-              </TouchableOpacity>
+              </View>
+              <View style={homeStyle.titleCont}>
+                <Text style={homeStyle.vidTitle}>
+                  How she cracked Google Summer of Code in First year in 1
+                  month🚀|GSoC Guide
+                </Text>
+                <Text style={homeStyle.subTitle}>
+                  Nishant Chahar · 51K views · 2 weeks ago{" "}
+                </Text>
+              </View>
+              <View>
+                <TouchableOpacity onPress={handleOpenModal}>
+                  <Image
+                    source={require("./assets/download1.png")}
+                    style={homeStyle.optionIcon}
+                  />
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
-        </View>
+        </TouchableOpacity>
 
-        <View style={{ marginBottom: 25 }}>
-          <View style={homeStyle.ImgCont}>
-            <TouchableWithoutFeedback
-              onPressIn={() => setIsPressed(true)}
-              onPressOut={() => setIsPressed(false)}
-            >
+        <TouchableOpacity onPress={() => navigation.navigate("VideoScreen")}>
+          <View style={{ marginBottom: 25 }}>
+            <View style={homeStyle.ImgCont}>
               <Image
                 source={require("./assets/hq720.webp")}
-                style={[homeStyle.Image, isPressed && homeStyle.imagePressed]}
-              />
-            </TouchableWithoutFeedback>
-          </View>
-          <View style={homeStyle.timeCont}>
-            <Text style={homeStyle.time}>12:30</Text>
-          </View>
-          <View style={{ flex: 1, flexDirection: "row" }}>
-            <View>
-              <Image
-                source={require("./assets/channels4_profile.jpg")}
-                style={homeStyle.profileImg}
+                style={homeStyle.Image}
               />
             </View>
-            <View style={homeStyle.titleCont}>
-              <Text style={homeStyle.vidTitle}>
-                How she cracked Google Summer of Code in First year in 1
-                month🚀|GSoC Guide
-              </Text>
-              <Text style={homeStyle.subTitle}>
-                Nishant Chahar · 51K views · 2 weeks ago{" "}
-              </Text>
+            <View style={homeStyle.timeCont}>
+              <Text style={homeStyle.time}>12:30</Text>
             </View>
-            <View>
-              <TouchableOpacity onPress={handleOpenModal}>
+            <View style={{ flex: 1, flexDirection: "row" }}>
+              <View>
                 <Image
-                  source={require("./assets/download1.png")}
-                  style={homeStyle.optionIcon}
+                  source={require("./assets/channels4_profile.jpg")}
+                  style={homeStyle.profileImg}
                 />
-              </TouchableOpacity>
+              </View>
+              <View style={homeStyle.titleCont}>
+                <Text style={homeStyle.vidTitle}>
+                  How she cracked Google Summer of Code in First year in 1
+                  month🚀|GSoC Guide
+                </Text>
+                <Text style={homeStyle.subTitle}>
+                  Nishant Chahar · 51K views · 2 weeks ago{" "}
+                </Text>
+              </View>
+              <View>
+                <TouchableOpacity onPress={handleOpenModal}>
+                  <Image
+                    source={require("./assets/download1.png")}
+                    style={homeStyle.optionIcon}
+                  />
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
-        </View>
+        </TouchableOpacity>
 
-        <View style={{ marginBottom: 25 }}>
-          <View style={homeStyle.ImgCont}>
-            <TouchableWithoutFeedback
-              onPressIn={() => setIsPressed(true)}
-              onPressOut={() => setIsPressed(false)}
-            >
+        <TouchableOpacity onPress={() => navigation.navigate("VideoScreen")}>
+          <View style={{ marginBottom: 25 }}>
+            <View style={homeStyle.ImgCont}>
               <Image
                 source={require("./assets/hq720.webp")}
-                style={[homeStyle.Image, isPressed && homeStyle.imagePressed]}
-              />
-            </TouchableWithoutFeedback>
-          </View>
-          <View style={homeStyle.timeCont}>
-            <Text style={homeStyle.time}>12:30</Text>
-          </View>
-          <View style={{ flex: 1, flexDirection: "row" }}>
-            <View>
-              <Image
-                source={require("./assets/channels4_profile.jpg")}
-                style={homeStyle.profileImg}
+                style={homeStyle.Image}
               />
             </View>
-            <View style={homeStyle.titleCont}>
-              <Text style={homeStyle.vidTitle}>
-                How she cracked Google Summer of Code in First year in 1
-                month🚀|GSoC Guide
-              </Text>
-              <Text style={homeStyle.subTitle}>
-                Nishant Chahar · 51K views · 2 weeks ago{" "}
-              </Text>
+            <View style={homeStyle.timeCont}>
+              <Text style={homeStyle.time}>12:30</Text>
             </View>
-            <View>
-              <TouchableOpacity onPress={handleOpenModal}>
+            <View style={{ flex: 1, flexDirection: "row" }}>
+              <View>
                 <Image
-                  source={require("./assets/download1.png")}
-                  style={homeStyle.optionIcon}
+                  source={require("./assets/channels4_profile.jpg")}
+                  style={homeStyle.profileImg}
                 />
-              </TouchableOpacity>
+              </View>
+              <View style={homeStyle.titleCont}>
+                <Text style={homeStyle.vidTitle}>
+                  How she cracked Google Summer of Code in First year in 1
+                  month🚀|GSoC Guide
+                </Text>
+                <Text style={homeStyle.subTitle}>
+                  Nishant Chahar · 51K views · 2 weeks ago{" "}
+                </Text>
+              </View>
+              <View>
+                <TouchableOpacity onPress={handleOpenModal}>
+                  <Image
+                    source={require("./assets/download1.png")}
+                    style={homeStyle.optionIcon}
+                  />
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
-        </View>
+        </TouchableOpacity>
 
-        <View style={{ marginBottom: 25 }}>
-          <View style={homeStyle.ImgCont}>
-            <TouchableWithoutFeedback
-              onPressIn={() => setIsPressed(true)}
-              onPressOut={() => setIsPressed(false)}
-            >
+        <TouchableOpacity onPress={() => navigation.navigate("VideoScreen")}>
+          <View style={{ marginBottom: 25 }}>
+            <View style={homeStyle.ImgCont}>
               <Image
                 source={require("./assets/hq720.webp")}
-                style={[homeStyle.Image, isPressed && homeStyle.imagePressed]}
-              />
-            </TouchableWithoutFeedback>
-          </View>
-          <View style={homeStyle.timeCont}>
-            <Text style={homeStyle.time}>12:30</Text>
-          </View>
-          <View style={{ flex: 1, flexDirection: "row" }}>
-            <View>
-              <Image
-                source={require("./assets/channels4_profile.jpg")}
-                style={homeStyle.profileImg}
+                style={homeStyle.Image}
               />
             </View>
-            <View style={homeStyle.titleCont}>
-              <Text style={homeStyle.vidTitle}>
-                How she cracked Google Summer of Code in First year in 1
-                month🚀|GSoC Guide
-              </Text>
-              <Text style={homeStyle.subTitle}>
-                Nishant Chahar · 51K views · 2 weeks ago{" "}
-              </Text>
+            <View style={homeStyle.timeCont}>
+              <Text style={homeStyle.time}>12:30</Text>
             </View>
-            <View>
-              <TouchableOpacity onPress={handleOpenModal}>
+            <View style={{ flex: 1, flexDirection: "row" }}>
+              <View>
                 <Image
-                  source={require("./assets/download1.png")}
-                  style={homeStyle.optionIcon}
+                  source={require("./assets/channels4_profile.jpg")}
+                  style={homeStyle.profileImg}
                 />
-              </TouchableOpacity>
+              </View>
+              <View style={homeStyle.titleCont}>
+                <Text style={homeStyle.vidTitle}>
+                  How she cracked Google Summer of Code in First year in 1
+                  month🚀|GSoC Guide
+                </Text>
+                <Text style={homeStyle.subTitle}>
+                  Nishant Chahar · 51K views · 2 weeks ago{" "}
+                </Text>
+              </View>
+              <View>
+                <TouchableOpacity onPress={handleOpenModal}>
+                  <Image
+                    source={require("./assets/download1.png")}
+                    style={homeStyle.optionIcon}
+                  />
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
-        </View>
+        </TouchableOpacity>
 
-        <View style={{ marginBottom: 25, paddingBottom: 80 }}>
-          <View style={homeStyle.ImgCont}>
-            <TouchableWithoutFeedback
-              onPressIn={() => setIsPressed(true)}
-              onPressOut={() => setIsPressed(false)}
-            >
+        <TouchableOpacity onPress={() => navigation.navigate("VideoScreen")}>
+          <View style={{ marginBottom: 25, paddingBottom: 80 }}>
+            <View style={homeStyle.ImgCont}>
               <Image
                 source={require("./assets/hq720.webp")}
-                style={[homeStyle.Image, isPressed && homeStyle.imagePressed]}
-              />
-            </TouchableWithoutFeedback>
-          </View>
-          <View style={homeStyle.timeCont}>
-            <Text style={homeStyle.time}>12:30</Text>
-          </View>
-          <View style={{ flex: 1, flexDirection: "row" }}>
-            <View>
-              <Image
-                source={require("./assets/channels4_profile.jpg")}
-                style={homeStyle.profileImg}
+                style={homeStyle.Image}
               />
             </View>
-            <View style={homeStyle.titleCont}>
-              <Text style={homeStyle.vidTitle}>
-                How she cracked Google Summer of Code in First year in 1
-                month🚀|GSoC Guide
-              </Text>
-              <Text style={homeStyle.subTitle}>
-                Nishant Chahar · 51K views · 2 weeks ago{" "}
-              </Text>
+            <View style={homeStyle.timeCont}>
+              <Text style={homeStyle.time}>12:30</Text>
             </View>
-            <View>
-              <TouchableOpacity onPress={handleOpenModal}>
+            <View style={{ flex: 1, flexDirection: "row" }}>
+              <View>
                 <Image
-                  source={require("./assets/download1.png")}
-                  style={homeStyle.optionIcon}
+                  source={require("./assets/channels4_profile.jpg")}
+                  style={homeStyle.profileImg}
                 />
-              </TouchableOpacity>
+              </View>
+              <View style={homeStyle.titleCont}>
+                <Text style={homeStyle.vidTitle}>
+                  How she cracked Google Summer of Code in First year in 1
+                  month🚀|GSoC Guide
+                </Text>
+                <Text style={homeStyle.subTitle}>
+                  Nishant Chahar · 51K views · 2 weeks ago{" "}
+                </Text>
+              </View>
+              <View>
+                <TouchableOpacity onPress={handleOpenModal}>
+                  <Image
+                    source={require("./assets/download1.png")}
+                    style={homeStyle.optionIcon}
+                  />
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
-        </View>
+        </TouchableOpacity>
       </ScrollView>
     </View>
   );

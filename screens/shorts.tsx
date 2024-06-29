@@ -17,25 +17,20 @@ import {
   TextInput,
 } from "react-native";
 import Video from "react-native-video";
-
 import homeStyle from "./styles/homeStyle.js";
 
 function ShortsScreen({ navigation }) {
   return (
     <View style={shortsStyle.container}>
-  
-  
       <Video
         source={require("./assets/short.mp4")}
         style={shortsStyle.video}
-        controls={true} // Show media controls
-        resizeMode="cover" // Video resize mode
-        repeat={false} // Set to true to loop the video
-        paused={false} // Control playback state
-        muted={false} // Mute the audio
+        controls={true} 
+        resizeMode="cover" 
+        repeat={false} 
+        paused={false} 
+        muted={false}
       />
-
-
     </View>
   );
 }

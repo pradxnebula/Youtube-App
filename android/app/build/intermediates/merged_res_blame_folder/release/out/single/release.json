@@ -1,0 +1,190 @@
+[
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-xxxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-xxxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_settings.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_settings.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.youtube.app-main-47:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_assets_channels4_profile.jpg.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/assets_channels4_profile.jpg"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_assets_add_icon.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/assets_add_icon.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_assets_shorts.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/assets_shorts.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_backarrow.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_backarrow.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_close.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_close.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.youtube.app-main-47:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_signout.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_signout.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_microphone.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_microphone.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.youtube.app-main-47:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.youtube.app-main-47:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.youtube.app-main-47:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_youtubelogo.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_youtubelogo.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_likeicon.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_likeicon.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_channels4_profile.jpg.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_channels4_profile.jpg"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_backtrack.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_backtrack.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/raw_screens_assets_short.mp4.flat",
+        "source": "com.youtube.app-res-41:/raw/screens_assets_short.mp4"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_download1.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_download1.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-xhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-xhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_searchinterfacesymbol.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_searchinterfacesymbol.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/raw_screens_assets_videoplayback.mp4.flat",
+        "source": "com.youtube.app-res-41:/raw/screens_assets_videoplayback.mp4"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_help.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_help.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_compass.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_compass.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_bellschool.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_bellschool.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_unlikeicon.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_unlikeicon.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.youtube.app-main-47:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_membership.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_membership.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.youtube.app-main-47:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.youtube.app-main-47:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_language.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_language.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.youtube.app-main-47:/drawable/rn_edit_text_material.xml"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_studio.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_studio.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backiconmask.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backiconmask.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_hq720.webp.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_hq720.webp"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_sharebtn.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_sharebtn.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_deviceconnected.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_deviceconnected.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_assets_subscriptions.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/assets_subscriptions.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-xxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-xxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.youtube.app-main-47:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.youtube.app-main-47:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_selectarrow.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_selectarrow.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_screens_assets_switchacc.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/screens_assets_switchacc.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "com.youtube.app-merged_res-46:/drawable-mdpi_assets_homeicon.png.flat",
+        "source": "com.youtube.app-res-41:/drawable-mdpi/assets_homeicon.png"
+    }
+]

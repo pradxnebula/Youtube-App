@@ -1,0 +1,10 @@
+#Sun Jun 30 02:24:56 IST 2024
+base.0=/Users/praddoom/Documents/Youtube-App/android/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+base.1=/Users/praddoom/Documents/Youtube-App/android/app/build/intermediates/global_synthetics_dex/release/classes.dex
+base.2=/Users/praddoom/Documents/Youtube-App/android/app/build/intermediates/dex/release/mergeDexRelease/classes2.dex
+path.0=classes.dex
+path.1=classes.dex
+path.2=classes2.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex

@@ -40,9 +40,9 @@ function AccountScreen({ navigation }) {
       >
         <Image
           source={require("./assets/close.png")}
-          style={accountStyle.Icon}
+          style={[accountStyle.Icon, { width: 21, height: 21, marginLeft: 5 }]}
         ></Image>
-        <Text style={accountStyle.Text}>Account</Text>
+        <Text style={[accountStyle.Text, { fontSize: 17 }]}>Account</Text>
       </View>
 
       <View
@@ -69,7 +69,7 @@ function AccountScreen({ navigation }) {
         </View>
       </View>
 
-      <View style={{ position: "absolute", marginTop: 220, gap: 35 }}>
+      <View style={{ position: "absolute", marginTop: 200, gap: 35 }}>
         <View style={accountStyle.optionCont}>
           <Image
             source={require("./assets/switch-acc.png")}
@@ -89,14 +89,14 @@ function AccountScreen({ navigation }) {
 
         <View style={accountStyle.optionCont}>
           <Image
-            source={require("./assets/switch-acc.png")}
+            source={require("./assets/studio.png")}
             style={accountStyle.Icon}
           ></Image>
           <Text style={accountStyle.Text}>Youtube Studio</Text>
         </View>
         <View style={accountStyle.optionCont}>
           <Image
-            source={require("./assets/switch-acc.png")}
+            source={require("./assets/membership.png")}
             style={accountStyle.Icon}
           ></Image>
           <Text style={accountStyle.Text}>Purchases and memberships</Text>
@@ -104,14 +104,14 @@ function AccountScreen({ navigation }) {
         <View style={accountStyle.intersection}></View>
         <View style={accountStyle.optionCont}>
           <Image
-            source={require("./assets/switch-acc.png")}
+            source={require("./assets/settings.png")}
             style={accountStyle.Icon}
           ></Image>
           <Text style={accountStyle.Text}>Settings</Text>
         </View>
         <View style={accountStyle.optionCont}>
           <Image
-            source={require("./assets/switch-acc.png")}
+            source={require("./assets/language.png")}
             style={accountStyle.Icon}
           ></Image>
           <Text style={accountStyle.Text}>Language: English</Text>
@@ -119,14 +119,14 @@ function AccountScreen({ navigation }) {
         <View style={accountStyle.intersection}></View>
         <View style={accountStyle.optionCont}>
           <Image
-            source={require("./assets/switch-acc.png")}
+            source={require("./assets/help.png")}
             style={accountStyle.Icon}
           ></Image>
           <Text style={accountStyle.Text}>Help</Text>
         </View>
         <View style={accountStyle.optionCont}>
           <Image
-            source={require("./assets/switch-acc.png")}
+            source={require("./assets/signout.png")}
             style={accountStyle.Icon}
           ></Image>
           <Text style={accountStyle.Text}>Sign out</Text>
@@ -143,7 +143,7 @@ const accountStyle = StyleSheet.create({
   },
   Text: {
     color: "#fff",
-    fontSize: 18,
+    fontSize: 15,
   },
   Icon: {
     width: 25,
@@ -153,12 +153,13 @@ const accountStyle = StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     marginLeft: 20,
-    gap: 40,
+    gap: 25,
+    alignItems: "center",
   },
   intersection: {
     width: screenWidth,
     backgroundColor: "grey",
-    height: 0.9,
+    height: 0.8,
     marginTop: -12,
     marginBottom: -12,
   },
